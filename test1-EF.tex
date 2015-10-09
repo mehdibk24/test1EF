@@ -1,0 +1,196 @@
+\documentclass{article}
+
+\usepackage{pgfplots}
+\usepackage[margin=0.75in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage[]{units}
+
+
+% For nicely typeset tabular material
+\usepackage{booktabs}
+
+%%
+% For graphics / images
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+%%
+% Additional
+\usepackage{units}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{mathtools}% http://ctan.org/pkg/mathtools
+%\usepackage{mparhack}
+\usepackage{sectsty} % Allows customizing section commands
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{pgf,tikz}
+%\usepackage{pgfplots}
+%\usetikzlibrary{shapes,arrows}
+%\usetikzlibrary{patterns,fadings}
+%\usetikzlibrary{arrows}
+% \usetikzlibrary{decorations.pathreplacing}
+% \usetikzlibrary{snakes}
+ %\usetikzlibrary{spy}
+ %\usepackage{setspace}
+% \usepackage{3dplot}
+% \usepackage{cancel}
+%\usepackage{physymb}
+%\usepackage{braket}
+%\usepackage{verbatim}
+%\usepackage[x11names]{xcolor}                     %Additional colors
+%\usepackage{euler}  
+
+
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+
+\begin{document}
+\pagenumbering{gobble}
+
+\doublespacing
+\textbf{IB Physics }                        %%%(class number and section) 
+ \hfill                             %%%(date of test)
+${\bf Name: } \underline{\hspace{2.5in}}$
+
+\begin{centering}
+\vspace{1cm}
+\textbf{Exam 1}\\
+\end{centering}
+
+\vspace{1cm}
+
+
+
+$$\begin{tikzpicture}[scale=1]
+     	
+	
+	
+\draw [color=gray!80] (0,0)--(3,0)
+   node [midway,anchor=south,inner sep=1pt, outer sep=1pt]{$r$};
+
+
+ \begin{scope}[shift={(0,0)}, scale=1,rotate=120] 
+ \draw[color=gray,dashed] (0,0) circle (3cm);
+  \begin{scope}[shift={(0,-4)}, scale=0.75, rotate=-90] 
+	  \draw[ thick,-stealth] (0,-0.1) -- (0,0.8) node [near start,anchor=east]{\scriptsize $\theta$};  
+	  \draw[thick](-0.1,0) -- (0.1,0);
+	   \draw[thick](0.2,-0.4) -- (0.2,-0.6);
+	    \draw[ thick,-stealth] (0.1,-0.5) -- (1,-0.5) node [near start,anchor=north]{\scriptsize $r$};  
+	  \end{scope}
+ \fill[black] (0,0) circle (0.5mm) node [anchor = south] {$M$};  
+ 
+ %\draw [very thick] (0,0) -- (0,-3);
+ \fill[white] (0,-3) circle (0.5cm);
+ \draw[very thick] (0,-3) circle (0.5cm);
+  \draw[very thick] (0,0) circle (0.8cm);
+ %\fill[color=white] (0.5,-2.5) -- (-0.5,-2.5) -- (-0.5,-3.5) -- (0.5,-3.5) -- cycle;
+ % \draw[very thick] (0.5,-2.5) -- (-0.5,-2.5) -- (-0.5,-3.5) -- (0.5,-3.5) -- cycle;
+  \draw (0,-3) node {$m$};
+ \end{scope}
+		  
+    
+   \end{tikzpicture}$$
+   
+   $$F_g=\frac{mMG}{r^2}$$
+   \begin{table}[htbp]
+\begin{center}
+\footnotesize
+\begin{tabular}{lllll}
+\toprule
+ Description              & Symbol          & Quantity                                                                \\
+\midrule
+  Gravitational Constant   & $G$             & $6.67 \times 10^{-11} \nicefrac{ \text{N}\cdot\text{m}^2}{\text{kg}^2}$ \\
+    Mass of Earth   & $m_{earth}$           & $5.98\times 10^{24} \text{kg}$    \\
+    Mass of Moon   & $m_{moon}$           & $7.36\times 10^{22} \text{kg}$    \\
+    Radius of Earth     & $R_{earth}$           & $6.38 \times 10^{6} \text{m}$                   \\
+     Radius of Moon    & $R_{moon}$           & $1.74 \times 10^{6} \text{m}$                   \\
+     Orbital Radius of Earth    & $r_{earth}$           & $1.50 \times 10^{11} {\text{m}}$                   \\
+     Orbital Radius of Moon    & $r_{moon}$           & $3.84 \times 10^{8} \text{m}$                   \\
+      Period of Earth's Orbit     & $T_{earth}$ &   $365.24\text{ days}$                    \\
+    Period of Moon's Orbit     & $T_{moon}$ &   $27.3\text{ days}$                    \\
+                                     
+
+\bottomrule
+\end{tabular}
+\end{center}
+  \caption{A list of physical quantities.}
+  \label{tab:font-sizes}
+\end{table}
+
+\newpage
+
+The first question of the exam is worth 30 points.  The above table is required. 
+
+ $\bf{1)}$ Consider the earth moving around the sun.
+ 
+  \vspace{1cm}
+ 
+ a.  Determine the orbital angular velocity of the earth.
+ 
+ \vspace{3.5cm}
+ 
+ b.  Determine the speed of the earth relative to the sun.
+ 
+  \vspace{3.5cm}
+  
+ c.  Determine centripetal acceleration of the earth relative to the sun.
+ 
+  \vspace{3.5cm}
+ 
+ d. Determine the net force on the earth considering this acceleration.
+ 
+  \vspace{3.5cm}
+ 
+ e. Determine the mass of the sun from the above.
+ 
+  
+ 
+ 
+
+
+  \newpage
+  The second question is worth 30 points.  The table is required.
+  
+ $\bf{2)}$  Consider gravitation at the surface of the moon.
+ 
+ \vspace{1cm}
+
+  
+ a.  Determine the acceleration due to gravity on the surface of the moon.
+   \vspace{4.5cm}
+ 
+ b.  Determine the launch velocity for circular orbit.
+   \vspace{4.5cm}
+ 
+ c.  Determine the launch velocity for escape from the moon's gravity.
+   \vspace{4.5cm}
+ 
+ d.  Determine the result of launching an object at 2000 m/s into the moon's horizon.
+ 
+
+  \newpage
+
+Question three is worth 40 points.
+
+  $\bf{3)}$  Consider a capacitor.  Two very large parallel conducting plates are connected to the leads of a 9 Volt battery.
+  \vspace{0.5cm}
+  
+  a.  Determine the separation between the plates to generate a $30.0\  \frac{\text{N}}{\text{C}}$ electric field.
+    \vspace{4.5cm}
+  
+  b.  Determine the force of this electric field on a 0.012 Coulomb charge.
+    \vspace{4.5cm}
+  
+  c.  Determine the change in potential energy for the 0.012 C charge moving from the 9V plate to the 0V plate.
+    \vspace{4.5cm}
+  
+  d. Draw the parallel plates and the electric field between them.  
+  
+  
+ 
+\end{document}
